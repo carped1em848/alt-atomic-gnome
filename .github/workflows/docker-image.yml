@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v4
 
@@ -21,7 +22,7 @@ jobs:
           REPO_NAME=$(echo "${{ github.repository }}" | awk -F '/' '{print $2}')
           
           # Собираем полный тег образа
-          IMAGE_TAG="ghcr.io/${{ github.repository_owner }}/$REPO_NAME:source"
+          IMAGE_TAG="ghcr.io/${{ github.repository_owner }}/$REPO_NAME:test"
           
           # Сборка и пуш
           docker build . --file Dockerfile --tag $IMAGE_TAG
