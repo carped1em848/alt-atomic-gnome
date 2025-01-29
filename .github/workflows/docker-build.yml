@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/$REPO_NAME:base
+          tags: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:base
           platforms: linux/amd64
           build-args: BUILD_TYPE=default
 
@@ -40,6 +40,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/$REPO_NAME:base-nv
+          tags: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:base-nv
           platforms: linux/amd64
           build-args: BUILD_TYPE=nvidia
