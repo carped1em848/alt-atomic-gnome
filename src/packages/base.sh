@@ -5,6 +5,7 @@ echo "Installing base packages"
 apt-get install -y \
     zsh \
     golang \
+    zram-generator \
     inxi \
     firmware-linux \
     jq \
@@ -84,11 +85,10 @@ apt-get install -y \
     dracut \
     kernel-image-6.12 \
     kernel-modules-drm-6.12 \
-    kernel-headers-6.12 \
     rsync \
     plymouth \
     mesa-dri-drivers \
     glxinfo \
-    ntp
+    chrony
 
 echo "End installing base packages"

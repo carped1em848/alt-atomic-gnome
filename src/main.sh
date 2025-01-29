@@ -10,12 +10,18 @@ echo "Running main.sh..."
 ./packages/apt_prepare.sh
 ./packages/base.sh
 ./packages/DE/GNOME/gnome.sh
+if [ "$BUILD_TYPE" = "nvidia" ]; then
+   ./packages/components/nvidia/packages.sh
+fi
 ./packages/apt_ending.sh
 
 # Настройка
 ./configuration/branding.sh
 ./configuration/settings.sh
 ./configuration/user.sh
+if [ "$BUILD_TYPE" = "nvidia" ]; then
+   ./configuration/nvidia.sh
+fi
 ./configuration/kernel.sh
 
 # Сборка программ
