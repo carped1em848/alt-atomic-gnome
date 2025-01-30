@@ -1,6 +1,8 @@
 name: Upgrade Base Image
 
 on:
+  schedule:
+    - cron: '0 0 * * *'  # Каждый день в 00:00 UTC
   push:
     branches: [ "main" ]
   pull_request:
@@ -36,7 +38,7 @@ jobs:
             ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
           platforms: linux/amd64
 
-      - name: Build and push upgrade nvidia image
+      - name: Build and push NVIDIA image
         uses: docker/build-push-action@v4
         with:
           context: .
