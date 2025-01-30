@@ -2,7 +2,7 @@ name: Upgrade Base Image
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Каждый день в 00:00 UTC
+    - cron: '0 * * * *'  # Каждый час
   push:
     branches: [ "main" ]
   pull_request:
