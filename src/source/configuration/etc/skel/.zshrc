@@ -7,6 +7,9 @@ fi
 # Подключаем zsh-autosuggestions
 source /usr/local/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Подключаем zsh-completions
+fpath=(/usr/share/zsh/site-functions $fpath)
+
 # Установить алиасы
 alias ll='ls -la'
 alias ..='cd ..'

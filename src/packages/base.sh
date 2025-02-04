@@ -14,6 +14,7 @@ apt-get install -y \
     fprintd \
     qemu-guest-agent \
     spice-vdagent \
+    zsh-completions \
     starship \
     htop \
     notify-send \
