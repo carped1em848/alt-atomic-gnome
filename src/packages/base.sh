@@ -10,10 +10,10 @@ apt-get install -y \
     firmware-linux \
     jq \
     yq \
-    virt-manager \
     fprintd \
     qemu-guest-agent \
     spice-vdagent \
+    bash-completion \
     zsh-completions \
     starship \
     htop \

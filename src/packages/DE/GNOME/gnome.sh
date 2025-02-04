@@ -4,6 +4,9 @@ echo "Installing GNOME packages"
 
 apt-get install -y \
   openssh-server \
+  virt-manager \
+  nautilus-python \
+  gtk3-theme-adw-gtk3 \
   gnome-session-wayland \
   gnome-session-xsession \
   gnome-control-center \
