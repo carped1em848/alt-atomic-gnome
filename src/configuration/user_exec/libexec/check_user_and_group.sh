@@ -120,7 +120,8 @@ while IFS=: read -r username _ uid gid gecos home shell; do
        # Если shell равен '/dev/null', используем корректный путь, например /sbin/nologin.
        effective_shell="$shell"
        if [ "$shell" = "/dev/null" ]; then
-            effective_shell="/sbin/nologin"
+            #effective_shell="/sbin/nologin"
+            effective_shell="/dev/null"
        fi
 
        # Если home равен '/dev/null' или TCB-каталог уже существует, используем флаг -M.
