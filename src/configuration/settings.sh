@@ -55,6 +55,7 @@ systemctl enable chrony
 systemctl enable docker.socket
 systemctl enable podman.socket
 systemctl enable sync-users.service
+systemctl enable sync-directory.service
 systemctl enable brew-setup.service
 systemctl enable update-image-task.timer
 systemctl enable brew-upgrade.timer
