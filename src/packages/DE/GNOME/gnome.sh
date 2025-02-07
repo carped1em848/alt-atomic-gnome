@@ -16,6 +16,7 @@ apt-get install -y \
   dconf-editor \
   fonts-otf-abattis-cantarell \
   gnome-backgrounds \
+  pinentry-gnome3 \
   yelp \
   gnome-system-monitor \
   gnome-logs \
