@@ -1,6 +1,8 @@
 name: Build Base image
 
 on:
+  schedule:
+    - cron: '0 0 * * 0'  # Каждую неделю
   push:
     branches: [ "main" ]
   pull_request:
