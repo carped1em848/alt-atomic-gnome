@@ -45,4 +45,7 @@ dracut --force \
        "${NVIDIA_EXTRA[@]}" \
        "${TARGET_DIR}/initramfs.img"
 
+# Depmod and autoload
+depmod -a -v "${KERNEL_VERSION}"
+
 echo "::endgroup::"
