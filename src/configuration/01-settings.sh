@@ -30,10 +30,16 @@ systemctl enable wsdd
 # Отключаем сервис
 systemctl mask packagekit.service
 
-# Отключаем packagekit для gnome-software
-if [ -e /usr/lib64/gnome-software/plugins-21/libgs_plugin_packagekit.so ]; then
-    mv /usr/lib64/gnome-software/plugins-21/libgs_plugin_packagekit.so /usr/lib64/gnome-software/plugins-21/libgs_plugin_packagekit.so.disabled
-fi
+# Отключаем плагин packagekit для gnome-software
+for dir in /usr/lib64/gnome-software/plugins-*; do
+    if [ -d "$dir" ]; then
+        file="$dir/libgs_plugin_packagekit.so"
+        if [ -e "$file" ]; then
+            mv "$file" "${file}.disabled"
+            echo "Файл $file переименован в ${file}.disabled"
+        fi
+    fi
+done
 
 # Включаем создание домашних папок
 sed -i 's/^[[:space:]]*enabled=false/enabled=True/i' /etc/xdg/user-dirs.conf
