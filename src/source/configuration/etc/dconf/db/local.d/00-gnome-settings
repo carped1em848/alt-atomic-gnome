@@ -2,12 +2,12 @@
 exec='ptyxis'
 
 [org/gnome/shell]
-favorite-apps=['firefox.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Software.desktop']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-dock@micxgx.gmail.com']
+favorite-apps=['org.gnome.TextEditor.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Software.desktop', 'org.telegram.desktop']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'dash-to-dock@micxgx.gmail.com', 'blur-my-shell@aunetx']
 
 [org/gnome/desktop/background]
-picture-uri='file:///usr/share/backgrounds/gnome/map-l.svg'
-picture-uri-dark='file:///usr/share/backgrounds/gnome/map-d.svg'
+picture-uri='file:///usr/share/backgrounds/gnome/amber-l.jxl'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/amber-d.jxl'
 
 [org/gnome/software]
 download-updates=false
@@ -18,9 +18,13 @@ allow-system-install=false
 sources=[('xkb', 'us'), ('xkb', 'ru')]
 
 [org/gnome/desktop/interface]
-font-name='Cantarell 11'
-document-font-name='Cantarell 11'
+gtk-theme='Adwaita-dark'
+color-scheme='prefer-dark'
+font-name='JetBrains Mono 11'
+document-font-name='JetBrains Mono 11'
 monospace-font-name='FiraCode Nerd Font 12'
+font-antialiasing='rgba'
+font-hinting='full'
 
 [org/gnome/desktop/wm/preferences]
 button-layout=':minimize,maximize,close'
