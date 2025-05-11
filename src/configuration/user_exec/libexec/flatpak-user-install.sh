@@ -47,7 +47,10 @@ flatpak install --user -y flathub org.gnome.World.PikaBackup && notify-send "Fla
 flatpak install --user -y flathub io.github.dvlv.boxbuddyrs && notify-send "Flatpak Installation" "Installed Boxbuddy" --app-name="Flatpak Manager Service" -u NORMAL
 flatpak install --user -y flathub com.github.tchx84.Flatseal && notify-send "Flatpak Installation" "Installed Flatseal" --app-name="Flatpak Manager Service" -u NORMAL
 flatpak install --user -y flathub org.telegram.desktop && notify-send "Flatpak Installation" "Installed telegram" --app-name="Flatpak Manager Service" -u NORMAL
-
+flatpak install --user -y flathub com.nextcloud.desktopclient.nextcloud && notify-send "Flatpak Installation" "Installed Nextcloud Desktop" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub ru.yandex.Browser && notify-send "Flatpak Installation" "Installed Yandex Browser" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub md.obsidian.Obsidian && notify-send "Flatpak Installation" "Installed Obsidian" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub org.libreoffice.LibreOffice && notify-send "Flatpak Installation" "Installed LibreOffice" --app-name="Flatpak Manager Service" -u NORMAL
 notify-send "Flatpak Installation" "Установка завершена" --app-name="Flatpak Manager Service" -u NORMAL
 echo "Done installing user-level Flatpaks"
 
