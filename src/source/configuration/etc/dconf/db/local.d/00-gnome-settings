@@ -20,10 +20,10 @@ sources=[('xkb', 'us'), ('xkb', 'ru')]
 [org/gnome/desktop/interface]
 gtk-theme='Adwaita-dark'
 color-scheme='prefer-dark'
-font-name='JetBrainsMono 11'
-document-font-name='JetBrainsMono 11'
+font-name='JetBrains Mono 11'
+document-font-name='JetBrains Mono 11'
 monospace-font-name='FiraCode Nerd Font 12'
-font-antialiasing='rgba'
+font-antialiasing='grayscale'
 font-hinting='full'
 
 [org/gnome/desktop/wm/preferences]
