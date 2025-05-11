@@ -42,6 +42,7 @@ GNOME_SHELL_PACKAGES=(
   gnome-extension-manager
   gnome-shell-extension-appindicator
   gnome-shell-extension-dash-to-dock
+  gnome-shell-extension-blur-my-shell
 )
 
 # GNOME — приложения и утилиты
