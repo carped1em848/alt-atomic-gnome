@@ -4,9 +4,9 @@ FROM ghcr.io/alt-atomic/alt-image:latest AS atomicBase
 ARG BUILD_TYPE="default"
 ENV BUILD_TYPE=$BUILD_TYPE
 
-RUN chmod +x /src/main.sh
 # Выполняем все шаги в одном RUN для минимизации слоёв
 RUN --mount=type=bind,source=./src,target=/src \
+    chmod +x /src/main.sh && \
     /src/main.sh
 
 # Стадия 2: Переход к пустому образу
