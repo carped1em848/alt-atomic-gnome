@@ -6,7 +6,6 @@ ENV BUILD_TYPE=$BUILD_TYPE
 
 # Выполняем все шаги в одном RUN для минимизации слоёв
 RUN --mount=type=bind,source=./src,target=/src \
-    chmod +x /src/main.sh && \
     /src/main.sh
 
 # Стадия 2: Переход к пустому образу
