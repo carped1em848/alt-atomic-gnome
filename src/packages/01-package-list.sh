@@ -134,6 +134,16 @@ NETWORK_PRINT_PACKAGES=(
   wsdd
 )
 
+HYPRLAND_PACKAGES=(
+"hyprland"
+"xdg-desktop-portal-hyprland"
+"waybar"
+"kitty"
+"mako"
+"rofi"
+"thunar"
+)
+
 apt-get install -y \
   "${BASIC_PACKAGES[@]}" \
   "${ZRAM_PACKAGES[@]}" \
@@ -146,6 +156,7 @@ apt-get install -y \
   "${DRIVERS[@]}" \
   "${WAYLAND_QT[@]}" \
   "${AUDIO_PACKAGES[@]}" \
-  "${NETWORK_PRINT_PACKAGES[@]}"
+  "${NETWORK_PRINT_PACKAGES[@]}" \
+  "${HYPRLAND_PACKAGES[@]}"
 
 echo "::endgroup::"
