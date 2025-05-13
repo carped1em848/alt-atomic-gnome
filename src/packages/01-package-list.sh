@@ -20,6 +20,8 @@ BASIC_PACKAGES=(
   ptyxis
   docker-engine
   rocm-opencl-runtime
+  gparted
+  obs-studio
 )
 
 GAMING_PACKAGES=(
