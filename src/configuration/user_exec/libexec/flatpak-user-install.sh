@@ -51,6 +51,14 @@ flatpak install --user -y flathub com.nextcloud.desktopclient.nextcloud && notif
 flatpak install --user -y flathub ru.yandex.Browser && notify-send "Flatpak Installation" "Installed Yandex Browser" --app-name="Flatpak Manager Service" -u NORMAL
 flatpak install --user -y flathub md.obsidian.Obsidian && notify-send "Flatpak Installation" "Installed Obsidian" --app-name="Flatpak Manager Service" -u NORMAL
 flatpak install --user -y flathub org.libreoffice.LibreOffice && notify-send "Flatpak Installation" "Installed LibreOffice" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub org.gnome.World.Secrets && notify-send "Flatpak Installation" "Installed Secrets" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub io.github.Foldex.AdwSteamGtk && notify-send "Flatpak Installation" "Installed AdwSteamGtk" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub com.github.sdv43.whaler && notify-send "Flatpak Installation" "Installed whaler" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub com.github.hugolabe.Wike && notify-send "Flatpak Installation" "Installed Wike" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub de.haeckerfelix.Fragments && notify-send "Flatpak Installation" "Installed Fragments" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub io.github.TransmissionRemoteGtk && notify-send "Flatpak Installation" "Installed TransmissionRemoteGtk" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub net.davidotek.pupgui2 && notify-send "Flatpak Installation" "Installed pupgui2" --app-name="Flatpak Manager Service" -u NORMAL
+flatpak install --user -y flathub org.kde.kdenlive && notify-send "Flatpak Installation" "Installed kdenlive" --app-name="Flatpak Manager Service" -u NORMAL
 notify-send "Flatpak Installation" "Установка завершена" --app-name="Flatpak Manager Service" -u NORMAL
 echo "Done installing user-level Flatpaks"
 
