@@ -18,6 +18,7 @@ BASIC_PACKAGES=(
   iucode_tool
   systemd-ssh-agent
   ptyxis
+  docker-engine
 )
 
 # Генератор ZRAM
