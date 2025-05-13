@@ -1,4 +1,4 @@
-FROM ghcr.io/alt-atomic/alt-image:latest AS atomicBase
+FROM ghcr.io/carped1em848/alt-image-base:latest AS atomicBase
 
 # Определяем тип сборки
 ARG BUILD_TYPE="default"
