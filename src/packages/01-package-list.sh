@@ -22,6 +22,8 @@ BASIC_PACKAGES=(
   rocm-opencl-runtime
   gparted
   obs-studio
+  mpd
+  plattenalbum
 )
 
 GAMING_PACKAGES=(
