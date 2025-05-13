@@ -19,6 +19,31 @@ BASIC_PACKAGES=(
   systemd-ssh-agent
   ptyxis
   docker-engine
+  rocm-opencl-runtime
+)
+
+GAMING_PACKAGES=(
+  i586-steam
+  i586-xorg-drv-radeon
+  i586-xorg-dri-radeon
+  i586-xorg-dri-swrast
+  i586-libGL
+  i586-libEGL
+  i586-libxatracker
+  i586-libgbm
+  i586-libGLES
+  i586-libGLX
+  i586-libglvnd
+  i586-libnsl1
+  portproton
+  i586-libvulkan1
+  i586-libd3d
+  i586-libgio
+  i586-libnm
+  i586-libnss
+  i586-glibc-nss
+  i586-glibc-pthread
+  i586-libunwind
 )
 
 # Генератор ZRAM
@@ -110,6 +135,7 @@ DRIVERS=(
   xorg-drv-amdgpu
   xorg-drv-vmware
   xorg-drv-nouveau
+  xorg-dri-swrast
 )
 
 # Wayland/Qt/Vulkan утилиты
@@ -147,6 +173,7 @@ apt-get install -y \
   "${DRIVERS[@]}" \
   "${WAYLAND_QT[@]}" \
   "${AUDIO_PACKAGES[@]}" \
+  "${GAMING_PACKAGES[@]}" \
   "${NETWORK_PRINT_PACKAGES[@]}"
 
 echo "::endgroup::"
