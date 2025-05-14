@@ -24,6 +24,7 @@ BASIC_PACKAGES=(
   obs-studio
   mpd
   plattenalbum
+  aplay
 )
 
 GAMING_PACKAGES=(
