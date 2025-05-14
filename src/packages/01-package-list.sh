@@ -19,7 +19,6 @@ BASIC_PACKAGES=(
   systemd-ssh-agent
   ptyxis
   docker-engine
-  rocm-opencl-runtime
   gparted
   obs-studio
   mpd
