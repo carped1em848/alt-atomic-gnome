@@ -25,6 +25,7 @@ BASIC_PACKAGES=(
   plattenalbum
   aplay
   mdadm
+  ffmpeg
 )
 
 GAMING_PACKAGES=(
