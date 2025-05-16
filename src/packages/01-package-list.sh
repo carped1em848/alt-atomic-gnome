@@ -26,6 +26,7 @@ BASIC_PACKAGES=(
   aplay
   mdadm
   ffmpeg
+  docker-compose-v2
 )
 
 GAMING_PACKAGES=(
