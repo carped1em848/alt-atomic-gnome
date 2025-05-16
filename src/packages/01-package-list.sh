@@ -24,6 +24,7 @@ BASIC_PACKAGES=(
   mpd
   plattenalbum
   aplay
+  mdadm
 )
 
 GAMING_PACKAGES=(
