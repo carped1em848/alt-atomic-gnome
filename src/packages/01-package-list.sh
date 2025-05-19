@@ -27,6 +27,7 @@ BASIC_PACKAGES=(
   mdadm
   ffmpeg
   docker-compose-v2
+  yt-dlp
 )
 
 GAMING_PACKAGES=(
