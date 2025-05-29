@@ -18,7 +18,6 @@ BASIC_PACKAGES=(
   iucode_tool
   systemd-ssh-agent
   ptyxis
-  docker-engine
   gparted
   obs-studio
   mpd
@@ -26,7 +25,6 @@ BASIC_PACKAGES=(
   aplay
   mdadm
   ffmpeg
-  docker-compose-v2
   yt-dlp
 )
 
